@@ -1,7 +1,5 @@
 # code-challenge-2
 
----
-
 ## Description
 This is a functional simple event guest list application that takes live submissions of invited guests' names and displays them in a guest table.
 
