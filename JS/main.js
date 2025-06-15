@@ -12,7 +12,15 @@
     const lastName = document.getElementById('last-name').value.trim();
     const category = document.getElementById('category').value;
 
-    if (!firstName || !lastName) return;
+    if (!firstName || !lastName) {
+      alert('Please enter both first and last names.');
+      return;
+    }
+
+    if (tableBody.children.length >= 10) {
+      alert('Guest limit reached. Only 10 guests allowed.');
+      return;
+    }
 
     const fullName = `${firstName} ${lastName}`;
     const timeAdded = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
