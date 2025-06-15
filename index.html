@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guest List Form</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./JS/main.js"></script>
+</head>
+<body>
+  <form class="form-container">
+    <h2 class="form-title">Event Guest List Manager</h2>
+
+    <div class="form-row">
+      <div class="form-group half">
+        <label for="first-name">First Name</label>
+        <input id="first-name" type="text" placeholder="First Name" class="input"/>
+      </div>
+
+      <div class="form-group half">
+        <label for="last-name">Last Name</label>
+        <input id="last-name" type="text" placeholder="Last Name" class="input"/>
+      </div>
+    </div>
+
+    <div class="form-group third">
+        <label for="category">Category</label>
+        <div class="select-wrapper">
+          <select id="category" class="select">
+            <option>Friend</option>
+            <option>Family</option>
+            <option>Colleague</option>
+          </select>
+          <div class="select-arrow">&#9662;</div>
+        </div>
+    </div>
+
+    <div class="form-row">
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+
+<div class="table-container">
+    <div class="table-header">
+      <input type="text" class="search-input" placeholder="Search for names..." />
+    </div>
+    <table class="guest-table">
+      <thead>
+        <tr>
+          <th>Guest Names</th>
+          <th>Category</th>
+          <th>Time Added</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</body>
+</html>
